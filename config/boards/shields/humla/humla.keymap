@@ -36,13 +36,13 @@
             layers = <0>;
             timeout-ms = <25>;
             key-positions = <11 12>;
-            bindings = <&kp LSHIFT>;
+            bindings = <&sk LSHIFT>;
         };
         combo_rshift {
             layers = <0>;
             timeout-ms = <25>;
             key-positions = <17 18>;
-            bindings = <&kp RSHIFT>;
+            bindings = <&sk RSHIFT>;
         };
     };
 };
@@ -81,20 +81,20 @@
         nav_layer {
             label = "Nav";
             bindings = <
-                &none       &none       &none       &none       &none       &none       &none       &kp UP       &none       &none 
-                &none       &none       &none       &kp LSHIFT  &none       &none       &kp LEFT    &kp DOWN     &kp RIGHT   &none
-                &kp LCTL    &kp LALT    &kp LGUI    &none       &to 1       &none       &kp HOME    &kp PG_DN    &kp PG_UP   &kp END
-                                        &none       &to 0       &none       &none       &none       &none
+                &none       &none       &none       &none       &none       &caps_word       &none       &kp UP       &none       &none 
+                &none       &none       &none       &kp LSHIFT  &none       &kp CAPS    &kp LEFT    &kp DOWN     &kp RIGHT   &none
+                &kp LCTL    &kp LALT    &kp LGUI    &none       &tog 1      &none       &kp HOME    &kp PG_DN    &kp PG_UP   &kp END
+                                        &none       &to 0       &none       &kp LC(BSPC)       &kp BSPC       &kp LC(DEL)
             >;
         };
 
         mouse_layer {
             label = "Mouse";
             bindings = <
-                &none       &none       &none       &none       &none       &none       &none       &kp UP       &none       &none 
-                &none       &none       &none       &kp LSHIFT  &none       &none       &kp LEFT    &kp DOWN       &kp RIGHT       &none
-                &kp LCTL    &kp LALT    &kp LGUI    &none       &to 2       &none       &kp HOME    &kp PG_DN       &kp PG_UP       &kp END
-                                        &none       &none       &to 0       &none       &none       &none
+                &kp LC(LS(TAB)) &kp LA(LEFT)  &kp F5      &kp LA(RIGHT)   &kp LC(TAB)  &none       &none       &kp UP     &none       &none 
+                &none           &none         &none       &kp LSHIFT      &none        &none       &kp LEFT    &kp DOWN   &kp RIGHT   &none
+                &kp LCTL        &kp LALT      &kp LGUI    &none           &to 2        &none       &kp HOME    &kp PG_DN  &kp PG_UP   &kp END
+                                              &none       &none           &to 0        &none       &none       &none
             >;
         };
         
@@ -111,20 +111,20 @@
         num_layer {
             label = "Num";
             bindings = <
-                &kp LBKT   &kp N7   &kp N8   &kp N9   &kp RBKT         &none   &none       &none     &none     &none
-                &kp SEMI   &kp N4   &kp N5   &kp N6   &kp EQUAL        &none   &kp LSHIFT  &none     &none     &none
-                &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp BACKSLASH    &to 4   &none       &kp LGUI  &kp LALT  &kp LCTL
-                                    &kp DOT  &kp N0   &kp MINUS        &none   &to 0       &none
+                &kp LBKT   &kp N7   &kp N8   &kp N9   &kp RBKT         &none     &none       &none     &none     &none
+                &kp SEMI   &kp N4   &kp N5   &kp N6   &kp EQUAL        &kp PSCRN &kp LC(V)  &none     &none     &none
+                &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp BACKSLASH    &to 4     &kp LC(C)       &kp LGUI  &kp LALT  &kp LCTL
+                                    &kp DOT  &kp N0   &kp MINUS        &none     &to 0       &none
             >;
         };
 
         func_layer {
             label = "Func";
             bindings = <
-                &kp F12   &kp F7  &kp F8    &kp F9     &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-                &kp F11   &kp F4  &kp F5    &kp F6     &none        &bt BT_CLR    &kp LSHIFT    &none          &none          &out OUT_TOG
-                &kp F10   &kp F1  &kp F2    &kp F3     &none        &to 5         &none         &kp LGUI       &kp LALT       &kp LCTL
-                                  &none     &none      &none        &none         &none         &to 0
+                &kp F12   &kp F7  &kp F8    &kp F9     &kp PSCRN       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
+                &kp F11   &kp F4  &kp F5    &kp F6     &kp SLCK        &bt BT_CLR    &kp LSHIFT    &none          &none          &out OUT_TOG
+                &kp F10   &kp F1  &kp F2    &kp F3     &kp PAUSE_BREAK &to 5         &none         &kp LGUI       &kp LALT       &kp LCTL
+                                  &none     &none      &none           &none         &none         &to 0
             >;
         };
 
