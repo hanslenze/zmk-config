@@ -64,6 +64,15 @@
     };
 };
 
+&mt {
+    tapping-term-ms = <280>;
+    flavor = "tap-preferred";
+};
+
+&lt {
+    flavor = "hold-preferred";
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
