@@ -122,9 +122,9 @@
             label = "Func";
             bindings = <
                 &kp F12   &kp F7  &kp F8    &kp F9     &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-                &kp F11   &kp F4  &kp F5    &kp f6     &none        &bt BT_CLR    &kp LSHIFT    &trans         &trans         &out OUT_TOG
-                &kp F10   &kp F1  &kp F2    &kp F3     &none        &to 5         &trans        &kp LGUI       &kp LALT       &kp LCTL
-                                  &none     &none      &none        &trans        &trans        &to 0
+                &kp F11   &kp F4  &kp F5    &kp F6     &none        &bt BT_CLR    &kp LSHIFT    &none          &none          &out OUT_TOG
+                &kp F10   &kp F1  &kp F2    &kp F3     &none        &to 5         &none         &kp LGUI       &kp LALT       &kp LCTL
+                                  &none     &none      &none        &none         &none         &to 0
             >;
         };
 
