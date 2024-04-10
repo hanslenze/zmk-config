@@ -101,10 +101,10 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-                &kp LC(LS(TAB)) &kp LA(LEFT)  &kp F5      &kp LA(RIGHT)   &kp LC(TAB)  &none       &none       &kp UP     &none       &none 
-                &none           &none         &none       &kp LSHIFT      &none        &none       &kp LEFT    &kp DOWN   &kp RIGHT   &none
-                &kp LCTL        &kp LALT      &kp LGUI    &none           &to 2        &none       &kp HOME    &kp PG_DN  &kp PG_UP   &kp END
-                                              &none       &none           &to 0        &none       &none       &none
+                &kp LC(LS(TAB)) &kp LA(LEFT)  &kp F5      &kp LA(RIGHT)   &kp LC(TAB)  &none       &none      U_MS_U     &none    U_WH_U 
+                &none           &none         &none       &kp LSHIFT      &none        &none       U_MS_L     U_MS_D     U_MS_R   U_WH_D
+                &kp LCTL        &kp LALT      &kp LGUI    &none           &to 2        &none       U_WH_L     U_WH_D     U_WH_U   U_WH_R
+                                              &none       &none           &to 0        &mkp LCLK   &mkp RCLK  &mkp MCLK
             >;
         };
         
