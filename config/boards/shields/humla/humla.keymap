@@ -124,8 +124,8 @@
             bindings = <
                 &kp LC(LS(TAB)) &kp LA(LEFT)  &kp F5      &kp LA(RIGHT)   &kp LC(TAB)  &none       &none      U_MS_U     &none    U_WH_U 
                 &none           &none         &none       &kp LSHIFT      &none        &none       U_MS_L     U_MS_D     U_MS_R   U_WH_D
-                &kp LCTL        &kp LALT      &kp LGUI    &none           &tog 2        &none       U_WH_L     U_WH_D     U_WH_U   U_WH_R
-                                              &none       &none           &tog 0        &mkp LCLK   &mkp RCLK  &mkp MCLK
+                &kp LCTL        &kp LALT      &kp LGUI    &none           U_WH_U       &none       U_WH_L     U_WH_D     U_WH_U   U_WH_R
+                                              &none       U_WH_D           &tog 0       &mkp LCLK   &mkp RCLK  &mkp MCLK
             >;
         };
         
