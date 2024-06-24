@@ -46,25 +46,20 @@
             bindings = <&sk RSHIFT>;
         };
         combo_mouselayer {
-            layers = <0>;
+            layers = <0 2>;
             timeout-ms = <25>;
             key-positions = <3 4>;
             bindings = <&tog 2>;
         };
-        combo_mouselayerexit {
-            layers = <2>;
-            timeout-ms = <25>;
-            key-positions = <3 4>;
-            bindings = <&tog 0>;
         };
         combo_navlayer {
-            layers = <0>;
+            layers = <0 1>;
             timeout-ms = <25>;
             key-positions = <13 14>;
             bindings = <&tog 1>;
         };
         combo_funlayer {
-            layers = <0>;
+            layers = <0 5>;
             timeout-ms = <25>;
             key-positions = <5 6>;
             bindings = <&tog 5>;
