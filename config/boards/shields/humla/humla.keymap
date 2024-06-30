@@ -51,7 +51,6 @@
             key-positions = <3 4>;
             bindings = <&tog 2>;
         };
-        };
         combo_navlayer {
             layers = <0 1>;
             timeout-ms = <25>;
