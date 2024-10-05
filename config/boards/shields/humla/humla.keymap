@@ -66,33 +66,18 @@
     };
 };
 
-/ {
-    behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&lt 4 SPACE>, <&kp SPACE>;
-        };
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&lt 1 BSPC>, <&kp BSPC>;
-        };
-    };
-};
-
 &mt {
     tapping-term-ms = <280>;
     flavor = "tap-preferred";
     require-prior-idle-ms = <150>;
+    quick-tap-ms = <175>;
 };
 
 &lt {
     tapping-term-ms = <230>;
     flavor = "balanced";
     require-prior-idle-ms = <150>;
+    quick-tap-ms = <175>;
 };
 
 / {
