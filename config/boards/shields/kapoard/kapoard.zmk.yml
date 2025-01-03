@@ -1,0 +1,10 @@
+file_format: "1"
+id: kapoard
+name: Kapoard
+type: shield
+url: na
+requires: [pro_micro]
+features:
+  - keys
+  - encoder
+  - OLED display
