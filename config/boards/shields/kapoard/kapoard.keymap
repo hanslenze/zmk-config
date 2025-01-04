@@ -108,10 +108,10 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-                &kp LC(LS(TAB)) &kp LA(LEFT)  &kp F5      &kp LA(RIGHT)   &kp LC(TAB)  &none       &none      U_MS_U     &none    U_WH_U 
-                &none           &none         &none       &kp LSHIFT      &none        &none       U_MS_L     U_MS_D     U_MS_R   U_WH_D
-                &kp LCTL        &kp LALT      &kp LGUI    &none           U_WH_U       &none       U_WH_L     U_WH_D     U_WH_U   U_WH_R
-                                  &none       &none       U_WH_D           &tog 2       &mkp LCLK   &mkp RCLK  &mkp MCLK  &none
+                &kp LC(LS(TAB)) &kp LA(LEFT)  &kp F5      &kp LA(RIGHT)   &kp LC(TAB)  &none       &none      &mmv MOUSE_UP     &none    &msc SCRL_UP 
+                &none           &none         &none       &kp LSHIFT      &none        &none       &mmv MOUSE_LEFT     &mmv MOUSE_DOWN     &mmv MOUSE_RIGHT   &msc SCRL_DOWN
+                &kp LCTL        &kp LALT      &kp LGUI    &none           &msc SCRL_UP       &none       &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP   &msc SCRL_RIGHT
+                                  &none       &none       &msc SCRL_DOWN           &tog 2       &mkp LCLK   &mkp RCLK  &mkp MCLK  &none
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
