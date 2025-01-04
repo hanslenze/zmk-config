@@ -84,7 +84,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "Base";
             bindings = <
                 &kp Q          &kp W        &kp E       &kp R     &kp T           &kp Y       &kp U     &kp I           &kp O         &kp P
                 &kp A          &kp S        &kp D       &kp F     &kp G           &kp H       &kp J     &kp K           &kp L         &kp SQT
@@ -95,7 +94,6 @@
         };
 
         nav_layer {
-            label = "Nav";
             bindings = <
                 &none       &none       &none       &none       &none       &caps_word       &none       &kp UP       &none       &none 
                 &none       &none       &none       &kp LSHIFT  &none       &kp CAPS    &kp LEFT    &kp DOWN     &kp RIGHT   &none
@@ -106,7 +104,6 @@
         };
 
         mouse_layer {
-            label = "Mouse";
             bindings = <
                 &kp LC(LS(TAB)) &kp LA(LEFT)  &kp F5      &kp LA(RIGHT)   &kp LC(TAB)  &none       &none      &mmv MOVE_UP     &none    &none 
                 &none           &none         &none       &kp LSHIFT      &none        &none       &mmv MOVE_LEFT     &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &none
@@ -117,7 +114,6 @@
         };
         
         sym_layer {
-            label = "Sym";
             bindings = <
                 &kp LBRC    &kp AMPS   &kp STAR   &kp LPAR   &kp RBRC         &none    &none       &none    &none    &none
                 &kp COLON   &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS         &none    &kp LSHIFT  &none    &none    &none
@@ -128,7 +124,6 @@
         };
 
         num_layer {
-            label = "Num";
             bindings = <
                 &kp LBKT   &kp N7   &kp N8   &kp N9   &kp RBKT         &none     &none       &none     &none     &none
                 &kp SEMI   &kp N4   &kp N5   &kp N6   &kp EQUAL        &kp PSCRN &kp LC(V)  &none     &none     &none
@@ -139,7 +134,6 @@
         };
 
         func_layer {
-            label = "Func";
             bindings = <
                 &kp F12   &kp F7  &kp F8    &kp F9     &kp PSCRN       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
                 &kp F11   &kp F4  &kp F5    &kp F6     &kp SLCK        &bt BT_CLR    &kp LSHIFT    &none          &none          &out OUT_TOG
