@@ -79,6 +79,18 @@
     quick-tap-ms = <175>;
 };
 
+&mmv {
+  acceleration-exponent = <1>;      // 1
+  time-to-max-speed-ms = <500>;    // 40
+  delay-ms = <0>;                   // 0
+};
+
+&msc {
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <40>;      // 500
+  delay-ms = <10>;                   // 10
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -106,8 +118,8 @@
         mouse_layer {
             bindings = <
                 &kp LC(LS(TAB)) &kp LA(LEFT)  &kp F5      &kp LA(RIGHT)   &kp LC(TAB)  &none       &none      &mmv MOVE_UP     &none    &none 
-                &none           &none         &none       &kp LSHIFT      &none        &none       &mmv MOVE_LEFT     &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &none
-                &kp LCTL        &kp LALT      &kp LGUI    &none           &msc SCRL_UP       &none       &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP   &msc SCRL_RIGHT
+                &kp C_PP        &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP    &kp C_NEXT        &none       &mmv MOVE_LEFT     &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &none
+                &kp LCTL        &kp LALT      &kp LGUI    &kp LSHIFT           &msc SCRL_UP       &none       &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP   &msc SCRL_RIGHT
                                   &none       &none       &msc SCRL_DOWN           &tog 2       &mkp LCLK   &mkp RCLK  &mkp MCLK  &none
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
