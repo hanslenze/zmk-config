@@ -53,8 +53,8 @@
 
     middle_encoder: encoder_middle {
         compatible = "alps,ec11";
-        a-gpios = <9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <18>;
         status = "okay";
     };
