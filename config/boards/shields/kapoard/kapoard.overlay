@@ -51,20 +51,19 @@
         zmk,matrix_transform = &default_transform;
     };
 
-    middle_encoder: encoder_middle {
+    left_encoder: encoder_left {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
+        status = "okay";
+
     };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&middle_encoder>;
+        sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
 
-    &middle_encoder {
-        status = "okay";
-    };
 };
