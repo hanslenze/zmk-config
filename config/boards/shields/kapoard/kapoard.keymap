@@ -116,7 +116,7 @@
                 &kp LCTL        &kp LALT      &kp LGUI    &kp LSHIFT           &msc SCRL_UP       &none       &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP   &msc SCRL_RIGHT
                                   &none       &none       &msc SCRL_DOWN           &tog 2       &mkp LCLK   &mkp RCLK  &mkp MCLK  &none
             >;
-        sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+        sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
         
         sym_layer {
