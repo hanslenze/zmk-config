@@ -25,4 +25,4 @@ include:
     shield: kapoard
     artifact-name: kapoard-nice_nano_v2
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    #cmake-args: -DCONFIG_ZMK_STUDIO=y
