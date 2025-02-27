@@ -105,7 +105,7 @@
                 &kp LCTL    &kp LALT    &kp LGUI    &none       &tog 1      &none       &kp HOME    &kp PG_DN    &kp PG_UP   &kp END
                                 &none   &none       &tog 1       &none       &kp LC(BSPC)       &kp BSPC       &kp LC(DEL) &none
             >;
-        #sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+        sensor-bindings = <&inc_dec_kp LS(TAB) TAB>;
         };
 
         mouse_layer {
@@ -116,7 +116,7 @@
                 &kp LCTL        &kp LALT      &kp LGUI    &kp LSHIFT           &msc SCRL_UP       &none       &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP   &msc SCRL_RIGHT
                                   &none       &none       &msc SCRL_DOWN           &tog 2       &mkp LCLK   &mkp RCLK  &mkp MCLK  &none
             >;
-        #sensor-bindings = <&inc_dec_kp SCRL_DOWN SCRL_UP>;
+        sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
         
         sym_layer {
@@ -127,7 +127,7 @@
                 &kp TILDE   &kp EXCL   &kp AT     &kp HASH   &kp PIPE         &tog 3    &none       &kp LGUI &kp LALT &kp LCTL
                               &none    &kp LPAR   &kp RPAR   &kp UNDER        &tog 3    &none       &none  &none
             >;
-        #sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         num_layer {
@@ -138,7 +138,7 @@
                 &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp BACKSLASH    &tog 4     &kp LC(C)       &mt RGUI COMMA  &mt RALT DOT  &kp LCTL
                            &none    &kp DOT  &kp N0   &kp MINUS        &none     &tog 4       &none   &none
             >;
-        #sensor-bindings = <&inc_dec_kp LS(TAB) TAB>;
+        sensor-bindings = <&inc_dec_kp LS(TAB) TAB>;
         };
 
         func_layer {
