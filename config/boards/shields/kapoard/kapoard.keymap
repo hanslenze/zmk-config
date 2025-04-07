@@ -29,6 +29,13 @@
  / {
     combos {
         compatible = "zmk,combos";
+
+        capsword {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <11 12 17 18>;
+            bindings = <&caps_word>
+        };
         combo_esc {
             layers = <0>;
             timeout-ms = <25>;
