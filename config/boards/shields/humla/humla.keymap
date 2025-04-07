@@ -76,6 +76,10 @@
     };
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS DOT COMMA>;
+};
+
 &mt {
     tapping-term-ms = <250>;
     flavor = "tap-preferred";
@@ -96,20 +100,20 @@
         default_layer {
             label = "Base";
             bindings = <
-                &kp Q          &kp W        &kp E       &kp R     &kp T           &kp Y       &kp U     &kp I           &kp O         &kp P
-                &kp A          &kp S        &kp D       &kp F     &kp G           &kp H       &kp J     &kp K           &kp L         &kp SQT
-                &mt LCTL Z     &mt LALT X   &mt LGUI C  &kp V     &kp B           &kp N       &kp M     &mt RGUI COMMA  &mt RALT DOT  &mt RCTL SLASH
-                                            &kp ESC     &lt 1 BSPC      &lt 2 TAB       &lt 3 ENTER &lt 4 SPACE      &lt 5 DEL
+                &kp Q          &kp W        &kp E       &kp R        &kp T           &kp Y       &kp U         &kp I           &kp O         &kp P
+                &kp A          &kp S        &kp D       &mt LSHFT F  &kp G           &kp H       &mt LSHFT J   &kp K           &kp L         &kp SQT
+                &mt LCTL Z     &mt LALT X   &mt LGUI C  &kp V        &kp B           &kp N       &kp M         &mt RGUI COMMA  &mt RALT DOT  &mt RCTL SLASH
+                                            &kp ESC     &lt 1 BSPC   &lt 2 TAB       &lt 3 ENTER &lt 4 SPACE   &lt 5 DEL
             >;
         };
 
         nav_layer {
             label = "Nav";
             bindings = <
-                &none       &none       &none       &none       &none       &caps_word       &none       &kp UP       &none       &none 
-                &none       &none       &none       &kp LSHIFT  &none       &kp CAPS    &kp LEFT    &kp DOWN     &kp RIGHT   &none
-                &kp LCTL    &kp LALT    &kp LGUI    &none       &tog 1      &none       &kp HOME    &kp PG_DN    &kp PG_UP   &kp END
-                                        &none       &tog 1       &none       &kp LC(BSPC)       &kp BSPC       &kp LC(DEL)
+                &none       &none       &none       &none       &none       &caps_word     &none       &kp UP       &none       &none 
+                &none       &none       &none       &kp LSHIFT  &none       &kp CAPS       &kp LEFT    &kp DOWN     &kp RIGHT   &none
+                &kp LCTL    &kp LALT    &kp LGUI    &none       &tog 1      &none          &kp HOME    &kp PG_DN    &kp PG_UP   &kp END
+                                        &none       &tog 1       &none       &kp LC(BSPC)  &kp BSPC    &kp LC(DEL)
             >;
         };
 
@@ -117,7 +121,7 @@
             label = "Mouse";
             bindings = <
                 &kp LC(LS(TAB)) &kp LA(LEFT)  &kp F5      &kp LA(RIGHT)   &kp LC(TAB)  &none       &none      U_MS_U     &none    U_WH_U 
-                &kp C_PP        &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP    &kp C_NEXT        &none       U_MS_L     U_MS_D     U_MS_R   U_WH_D
+                &kp C_PP        &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP    &kp C_NEXT   &none       U_MS_L     U_MS_D     U_MS_R   U_WH_D
                 &kp LCTL        &kp LALT      &kp LGUI    &kp LSHIFT      U_WH_U       &none       U_WH_L     U_WH_D     U_WH_U   U_WH_R
                                               &none       U_WH_D          &tog 2       &mkp LCLK   &mkp RCLK  &mkp MCLK
             >;
@@ -126,8 +130,8 @@
         sym_layer {
             label = "Sym";
             bindings = <
-                &kp LBRC    &kp AMPS   &kp STAR   &kp LPAR   &kp RBRC         &none    &none       &none    &none    &none
-                &kp COLON   &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS         &none    &kp LSHIFT  &none    &none    &none
+                &kp LBRC    &kp AMPS   &kp STAR   &kp LPAR   &kp RBRC         &none     &none       &none    &none    &none
+                &kp COLON   &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS         &none     &kp LSHIFT  &none    &none    &none
                 &kp TILDE   &kp EXCL   &kp AT     &kp HASH   &kp PIPE         &tog 3    &none       &kp LGUI &kp LALT &kp LCTL
                                        &kp LPAR   &kp RPAR   &kp UNDER        &tog 3    &none       &none
             >;
@@ -136,10 +140,10 @@
         num_layer {
             label = "Num";
             bindings = <
-                &kp LBKT   &kp N7   &kp N8   &kp N9   &kp RBKT         &none     &none       &none     &none     &none
-                &kp SEMI   &kp N4   &kp N5   &kp N6   &kp EQUAL        &kp PSCRN &kp LC(V)  &none     &none     &none
-                &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp BACKSLASH    &tog 4     &kp LC(C)       &mt RGUI COMMA  &mt RALT DOT  &kp LCTL
-                                    &kp DOT  &kp N0   &kp MINUS        &none     &tog 4       &none
+                &kp LBKT   &kp N7   &kp N8   &kp N9   &kp RBKT         &none     &none       &none          &none         &none
+                &kp SEMI   &kp N4   &kp N5   &kp N6   &kp EQUAL        &kp PSCRN &kp LC(V)   &kp LG(TAB)    &none         &none
+                &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp BACKSLASH    &tog 4    &kp LC(C)   &mt RGUI COMMA &mt RALT DOT  &mt LCTL SLASH
+                                    &kp DOT  &kp N0   &kp MINUS        &none     &tog 4      &none
             >;
         };
 
@@ -148,7 +152,7 @@
             bindings = <
                 &kp F12   &kp F7  &kp F8    &kp F9     &kp PSCRN       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
                 &kp F11   &kp F4  &kp F5    &kp F6     &kp SLCK        &bt BT_CLR    &kp LSHIFT    &none          &none          &out OUT_TOG
-                &kp F10   &kp F1  &kp F2    &kp F3     &kp PAUSE_BREAK &tog 5         &none         &kp LGUI       &kp LALT       &kp LCTL
+                &kp F10   &kp F1  &kp F2    &kp F3     &kp PAUSE_BREAK &tog 5        &none         &kp LGUI       &kp LALT       &kp LCTL
                                   &none     &none      &none           &none         &none         &tog 5
             >;
         };
