@@ -3,7 +3,7 @@
 / {
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        display-name = "default_transform";
+        display-name = "kapoard";
 
         kscan = <&kscan0>;
         transform = <&matrix_transform0>;
@@ -41,10 +41,10 @@
             , <&key_physical_attrs 100 100 1200  238       0     0     0>
             , <&key_physical_attrs 100 100  200  300       0     0     0>
             , <&key_physical_attrs 100 100  300  312       0     0     0>
-            , <&key_physical_attrs 100 100  400  325       0   298   790>
-            , <&key_physical_attrs 100 100  500  340       0   298   790>
-            , <&key_physical_attrs 100 100  700  340       0  1002   790>
-            , <&key_physical_attrs 100 100  800  325       0  1002   790>
+            , <&key_physical_attrs 100 100  400  325       0     0     0>
+            , <&key_physical_attrs 100 100  500  340       0     0     0>
+            , <&key_physical_attrs 100 100  700  340       0     0     0>
+            , <&key_physical_attrs 100 100  800  325       0     0     0>
             , <&key_physical_attrs 100 100  900  312       0     0     0>
             , <&key_physical_attrs 100 100 1000  300       0     0     0>
             ;
