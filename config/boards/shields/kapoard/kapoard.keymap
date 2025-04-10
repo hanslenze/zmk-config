@@ -6,7 +6,7 @@
  * Last edited by Hans Lenze Kaper, 2025-01-02.
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1100  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <behaviors.dtsi>
@@ -140,10 +140,10 @@
         num_layer {
             display-name = "Num";
             bindings = <
-                &kp LBKT   &kp N7   &kp N8   &kp N9   &kp RBKT         &none     &none       &none     &none     &none
-                &kp SEMI   &kp N4   &kp N5   &kp N6   &kp EQUAL        &kp PSCRN &kp LC(V)  &none     &none     &none
-                &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp BACKSLASH    &tog 4     &kp LC(C)       &mt RGUI COMMA  &mt RALT DOT  &kp LCTL
-                           &none    &kp DOT  &kp N0   &kp MINUS        &none     &tog 4       &none   &none
+                &kp LBKT   &kp N7   &kp N8   &kp N9   &kp RBKT         &none      &none      &none           &none         &none
+                &kp SEMI   &kp N4   &kp N5   &kp N6   &kp EQUAL        &kp PSCRN  &kp LC(V)  &kp LG(TAB)     &none         &none
+                &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp BACKSLASH    &tog 4     &kp LC(C)  &mt RGUI COMMA  &mt RALT DOT  &kp LCTL
+                           &none    &kp DOT  &kp N0   &kp MINUS        &none      &tog 4     &none   &none
             >;
         sensor-bindings = <&inc_dec_kp LS(TAB) TAB>;
         };
